@@ -7,7 +7,7 @@ import com.project.coupons.Coupon;
 import com.project.coupons.Customer;
 
 public class CouponDBDAO implements ICustomerDAO {
-
+	private static final String TABLE_NAME = "coupon";
 	@Override
 	public void createCustomer(Customer C) {
 		// TODO Auto-generated method stub

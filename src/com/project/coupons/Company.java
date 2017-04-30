@@ -1,10 +1,11 @@
 package com.project.coupons;
 import com.project.dao.*;
 public class Company {
-	private static long ID;
+	private  long ID;
 	private String compName;
 	private String password;
 	private String email;
+	
 
 	public Company(String compName, String password, String email) {
 		
@@ -13,17 +14,24 @@ public class Company {
 		this.email = email;
 		
 	}
-
+   public Company(Long ID,String compName, String password, String email) {
+		
+		this.ID=ID;
+	    this.compName = compName;
+		this.password = password;
+		this.email = email;
+		
+	}
 	public Company() {
 
 	}
 
-	public static long getID() {
+	public  long getID() {
 		return ID;
 	}
 
-	public static void setID(long iD) {
-		ID = iD;
+	public  void setID(long iD) {
+		this.ID = iD;
 	}
 
 	public String getCompName() {

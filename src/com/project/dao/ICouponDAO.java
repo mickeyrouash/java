@@ -4,12 +4,12 @@ import java.util.List;
 import com.project.coupons.*;
 
 public interface ICouponDAO {
-	 void createCoupon(Coupon C);
-	 void removeCoupon(Coupon C);
-	 void updateCoupon(Coupon C);
-	 Coupon getCoupon(long id);
-	 List<Coupon> getAllCoupons();
-	 List <Coupon> getCouponsByType(CouponType ct);
+	 void createCoupon(Coupon C) throws DaoException;
+	 void removeCoupon(Coupon C) throws DaoException;
+	 void updateCoupon(Coupon C) throws DaoException;
+	 Coupon getCoupon(long id) throws DaoException;
+	 List<Coupon> getAllCoupons() throws DaoException;
+	 List <Coupon> getCouponsByType(CouponType ct) throws DaoException;
 	
 
 }
